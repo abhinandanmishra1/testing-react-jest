@@ -14,4 +14,10 @@ describe("Home Component Tests", () => {
     expect(navDiv).toBeTruthy();
     expect(navDiv.childElementCount).toBe(2);
   });
+
+  test("Navbar should have display of flex", () => {
+    const { getByTestId } = render(<Navbar />);
+    const navDiv = getByTestId("navbar");
+    expect(navDiv).toHaveStyle("display:flex");
+  });
 });
