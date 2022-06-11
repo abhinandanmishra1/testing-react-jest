@@ -54,12 +54,4 @@ describe("Box component tests", () => {
     font-size: 0.7rem;
 `);
   });
-
-  // test("On hovering box : Box-shadow should be removed and border should be added",()=>{
-  //   const { queryByTestId } = render(<Box data={data} />);
-  //   const BoxComponent=queryByTestId("box");
-  //   fireEvent.mouseOver(BoxComponent);
-  //   expect(BoxComponent).toHaveStyle("box-shadow: 0px 0px 0px 0px");
-
-  // })
 });
