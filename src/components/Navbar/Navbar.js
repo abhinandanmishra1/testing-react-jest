@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 const Navbar = () => {
   return (
-    <div className="navBar">
+    <div data-testid="navbar" className="navBar">
       <div className="logo">
         <img src="https://files.codingninjas.in/cn-logo-dark-9824.svg" />
       </div>

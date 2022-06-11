@@ -25,11 +25,11 @@ const Home = () => {
     }
   ];
   return (
-    <div>
-      <Navbar />
-      <div className="boxes">
-        {boxes.map((box) => (
-          <Box data={box} />
+    <div data-testid="home-div">
+      <Navbar data-testid="navbar" />
+      <div data-testid="boxes" className="boxes">
+        {boxes.map((box, index) => (
+          <Box data-testid="box" key={index} data={box} />
         ))}
       </div>
     </div>
